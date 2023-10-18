@@ -1,0 +1,374 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+body {
+  background-color: #ebebeb;
+}
+
+/* Barra de navegación */
+nav {
+  display: none;
+}
+
+/* Títulos de sección */
+main section h3 {
+  font-size: 24px;
+}
+
+/* Última visita */
+main section.last-visit {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Texto general */
+p {
+  font-size: 12px;
+}
+
+/* Encabezado superior */
+div.top-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Formulario */
+form.form {
+  display: flex;
+  width: 50%;
+}
+
+/* Encabezado */
+header {
+  background-color: #fff159;
+}
+
+/* Logo */
+header div.logo {
+  width: 50%;
+  padding: 10px;
+}
+
+/* Menú de navegación */
+header nav {
+  font-size: 12px;
+  display: flex;
+}
+
+header ul {
+  list-style-type: none;
+  display: none;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+/* Enlaces en el menú */
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Input en el encabezado */
+header input#input {
+  background-color: #fff;
+  outline: none;
+  color: #666;
+  font-size: 12px;
+  padding-top: 1px;
+  padding-left: 2px;
+  border-radius: 3px;
+  border: #666 1px solid;
+  width: 90%;
+  max-height: 32px;
+}
+
+header .input {
+  width: 10%;
+}
+
+/* Botón de envío en el encabezado */
+header .submit {
+  background-color: #fff;
+  color: #666;
+  max-height: 24px;
+  border-radius: 3px;
+  border: #666 1px solid;
+  font-size: 12px;
+  padding-top: 1px;
+}
+
+/* Párrafo en el encabezado */
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+}
+
+/* Menú desplegable */
+div.burger-menu {
+  text-align: center;
+}
+
+/* Ícono del menú desplegable */
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+
+/* Contenido principal de la página */
+article div.main-article {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+/* Descuentos y descripciones */
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+}
+
+/* Títulos y descripciones */
+h3,
+.description {
+  color: black;
+}
+
+/* Imagen en la sección de banner */
+section.banner img {
+  width: 100%;
+}
+
+/* Contenedor principal */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Contenedores de productos */
+main section div.products article {
+  background-color: #fff;
+  width: 100%;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+/* Imagen en los artículos de productos */
+main section article img {
+  width: 100%;
+  padding: 0;
+}
+
+/* Contenedor de productos */
+div.products {
+  display: flex;
+}
+
+/* Icono de camión */
+section article i {
+  color: #39b54a;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+/* Contenedor de descripciones en los artículos */
+article div.main-article {
+  position: relative;
+}
+
+/* Descuento y precio */
+.price-discount {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+p.discount {
+  color: #39b54a;
+  width: 70%;
+  padding-top: 1px;
+  text-align: center;
+}
+
+p.price {
+  font-size: 18px;
+  width: 30%;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Ícono de tamaño en el pie de página */
+footer section i {
+  size: 2em;
+  margin-top: 30px;
+}
+
+/* Ícono de tamaño en el pie de página al pasar el mouse */
+footer section i:hover {
+  size: 2em;
+  margin-top: 30px;
+  color: #eac926;
+}
+
+/* Párrafo en el pie de página */
+footer section p {
+  font-size: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+/* Detalle de derechos de autor */
+section p.detailCopyright {
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 30px;
+  background-color: #fff;
+}
+
+/* Elemento en el menú de navegación */
+header nav ul li#list1 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Títulos adicionales */
+h4 {
+  margin-top: 10px;
+}
+
+/* Descripciones */
+h4.description {
+  display: none;
+}
+
+/* Artículos ocultos */
+article#macbook,
+article#samsung,
+article#tv {
+  display: none;
+}
+
+/* Media Queries */
+@media (min-width: 480px) {
+  article div.main-article h4.description {
+    display: block;
+  }
+
+  nav {
+    display: block;
+  }
+
+  header div.burger-menu {
+    display: none;
+  }
+
+  header ul.left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    gap: 50px;
+  }
+
+  header ul.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    gap: 50px;
+  }
+
+  article#macbook {
+    display: block;
+  }
+
+  div.top-header {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 769px) {
+  article div.main-article h4.description {
+    position: relative;
+    opacity: 0;
+  }
+
+  main section div.products article {
+    width: 22%;
+    box-shadow: none;
+    transition: box-shadow 300ms;
+    cursor: pointer;
+  }
+
+  main section div.products article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  main section article:hover h4.description {
+    opacity: 1;
+  }
+
+  main section div.products article .fa-truck {
+    transition: transform 300ms;
+  }
+
+  main section div.products article:hover .fa-truck {
+    transform: rotate(-90deg);
+  }
+
+  form.formlogin button {
+    transition: color, background-color 300ms;
+    cursor: pointer;
+  }
+
+  form.formlogin button:hover {
+    background-color: #0022AA;
+    color: #ffffff;
+  }
+
+  article#samsung,
+  article#tv {
+    display: block;
+  }
+
+  footer {
+    display: flex;
+    padding-bottom: 30px;
+  }
+}
+
